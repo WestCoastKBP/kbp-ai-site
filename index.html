@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
-<meta name="description" content="KBP AI — Knowledge Becomes Progress. Useful actions and checked results in real life, with human control over decisions, data and permissions. Prototype in development.">
+<meta name="description" content="KBP AI is an independent project exploring how people can use AI to build working systems around recurring tasks. See the private prototype's current scope and follow development.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://kbp-ai.com/">
 <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/WestCoastKBP/.github/main/assets/identity-v1/kbp-ai-avatar-dark-1024.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="KBP AI — Knowledge Becomes Progress">
-<meta property="og:description" content="Useful actions and checked results in real life, with human control over decisions, data and permissions. Prototype in development.">
+<meta property="og:description" content="KBP AI is an independent project exploring how people can use AI to build working systems around recurring tasks. See the private prototype's current scope and follow development.">
 <meta property="og:url" content="https://kbp-ai.com/">
 <meta property="og:image" content="https://raw.githubusercontent.com/WestCoastKBP/.github/main/assets/identity-v1/kbp-ai-social-card.jpg">
 <meta property="og:image:alt" content="KBP AI — Knowledge Becomes Progress">
@@ -54,6 +54,7 @@ blockquote{margin:0;padding:0;color:var(--text);font-size:1.0625rem}
 .draft{border-top:1px solid var(--border);padding-top:20px}.draft p{margin:8px 0 0}
 .wait{display:flex;align-items:center;gap:10px;border-top:1px solid var(--border);padding-top:20px;margin-top:24px;font-size:.9375rem}
 .wait svg{width:18px;height:18px;flex-shrink:0}
+.steps{list-style:none;margin:20px 0 0;padding:0}.steps li{display:flex;align-items:flex-start;gap:10px;padding:12px 0;border-top:1px solid var(--border);font-size:.9375rem}.steps svg{width:18px;height:18px;flex-shrink:0;margin-top:3px}.steps .next{color:var(--muted)}
 .columns{display:grid;grid-template-columns:1fr 1fr;gap:40px}.columns p{color:var(--muted);margin:0}
 .rows{margin:0}.rows>div{display:grid;grid-template-columns:220px 1fr;gap:32px;padding:20px 0;border-top:1px solid var(--border)}
 .rows dt{font-weight:600}.rows dd{margin:0;color:var(--muted)}
@@ -78,37 +79,47 @@ try{const t=localStorage.getItem('kbp-site-theme');if(t==='light'||t==='dark')do
 </header>
 <main id="main">
 <div class="hero">
-<p class="eyebrow">KBP AI · Prototype in development</p>
+<p class="eyebrow">Independent project · Private prototype</p>
 <h1>Knowledge<br>Becomes Progress.</h1>
-<p class="lead">We are building KBP AI to help people turn knowledge and AI into useful actions and checked results in real life.</p>
-<div class="actions"><a class="button" href="#product">Explore the product</a><a class="button secondary" href="https://github.com/WestCoastKBP/kbp-ai-site">Follow development <span aria-hidden="true">&nbsp;↗</span></a><a class="button secondary" href="mailto:hello@kbp-ai.com">Contact us</a></div>
+<p class="lead">AI can help write a reply. Keeping the customer's request moving still takes work. We're building KBP AI to keep the messages, decisions and next steps of that work together. Our first focus is independent professionals and small-business owners who coordinate recurring customer work across their tools.</p>
+<div class="actions"><a class="button" href="#status">See what works today</a><a class="button secondary" href="mailto:hello@kbp-ai.com">Discuss a recurring task</a><a class="button secondary" href="https://github.com/WestCoastKBP">Follow development <span aria-hidden="true">&nbsp;↗</span></a></div>
 </div>
 <section id="product" aria-labelledby="product-title">
-<h2 id="product-title">Keep the matter, not just the chat.</h2>
-<p class="intro">KBP AI is being built for people who already use AI but still move messages, documents and follow-up between separate tools. The aim is to keep the relevant context and next decision together.</p>
+<h2 id="product-title">Start with one customer request.</h2>
+<p class="intro">A request arrives by email. It becomes an ongoing matter, with its source and next step kept together, so you can come back to it later. Our current private test covers receiving the message, creating the matter and reopening it. Preparing a reply and checking what happens after it is sent are the next parts to demonstrate.</p>
 <div class="example">
-<div class="example-copy"><h3>From an incoming message to a decision</h3><p>A meeting invitation needs a reply. The intended workflow brings the message into its workspace, prepares a response and waits for your approval. After sending, it should show the actual delivery result.</p><p>Connections tells you which tools can be used. Inbox brings incoming messages and decisions needing your attention into one place.</p><p class="caption">Illustrative workflow · Not a live product screen.<br>This example describes a design goal, not an available integration.</p></div>
-<div class="matter" aria-label="Illustrative meeting reply">
-<div class="matter-top"><span>Personal / Inbox</span><span class="label">Example</span></div>
-<h3>Reply to a meeting invitation</h3>
-<blockquote>“Could we meet on Thursday at 10?”</blockquote>
-<p class="source">Incoming message · Fictional example</p>
-<div class="draft"><h3>Proposed reply</h3><p>“Thursday at 10 works for me. Please send the meeting location.”</p></div>
-<div class="wait"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Waiting for your approval · Nothing sent</span></div>
+<div class="example-copy"><h3>What the private test covers</h3><p>One incoming work message becomes a matter that keeps its source. When the matter is reopened, its stage and next step are still there.</p><p class="caption">This card illustrates the workflow. It is not a live product screenshot or a public demonstration.</p></div>
+<div class="matter" aria-label="Illustrative customer inquiry">
+<div class="matter-top"><span>Work email</span><span class="label">Illustrative data · Current private test</span></div>
+<h3>Customer inquiry</h3>
+<ul class="steps">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Message received</span></li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Matter created with its source</span></li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Stage and next step kept after reopening</span></li>
+<li class="next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke-dasharray="3 3"/></svg><span>Next: draft reply · Not yet demonstrated live</span></li>
+</ul>
 </div>
 </div>
 </section>
-<section aria-labelledby="control-title"><h2 id="control-title">Your tools. Your boundaries.</h2>
-<div class="columns"><div><h3>Separate workspaces</h3><p>Personal, Engineering and Business/Work are intended to keep their own context and permissions. Projects, roles and connections belong to the workspace where you need them.</p></div><div><h3>Decisions stay with you</h3><p>You keep control of decisions, data and permissions. The product direction is to make proposed actions, waiting states and checked results visible. More messages, code or plans alone are not progress.</p></div></div>
-<p class="note">These are product design goals. Signing in to a model provider does not automatically grant access to its APIs or to your other accounts.</p>
+<section aria-labelledby="direction-title"><h2 id="direction-title">A system you can develop around your work.</h2>
+<p class="intro">The longer-term aim is to help people add useful workflows, tools and products as their needs grow. The customer-inquiry workflow is our first test. It is not a released builder, and it is not the limit of what KBP AI may become.</p>
 </section>
-<section id="status" aria-labelledby="status-title"><h2 id="status-title">What you can do today</h2>
-<p class="intro">Explore the product direction and follow development. KBP AI is not yet available as a public product you can install and use.</p>
-<dl class="rows"><div><dt>Public today</dt><dd>This website preview and the <a href="https://github.com/WestCoastKBP/kbp-ai-site">public website repository</a>.</dd></div><div><dt>In development</dt><dd>The workspace interface and complete communication workflows. Each channel needs its own incoming-message, approved-reply and recovery verification.</dd></div><div><dt>Not publicly available</dt><dd>A verified end-user installer, product source release and reproducible end-to-end product demo.</dd></div></dl>
-<p class="note">Website preview · Not a production acceptance or a demonstration of connected tools.</p>
+<section aria-labelledby="control-title"><h2 id="control-title">Understand the work. Choose the next step.</h2>
+<p class="intro">The product is being designed to show what has happened, what is waiting and what needs your decision. Personal and professional information must keep their own permissions. These are requirements we are building and testing.</p>
+</section>
+<section id="status" aria-labelledby="status-title"><h2 id="status-title">What exists today</h2>
+<dl class="rows"><div><dt>Private prototype</dt><dd>Tested by the founder: work email enters an inbox, a message becomes a retained matter, and the matter reopens with its stage and next step.</dd></div><div><dt>Public today</dt><dd>This website, product documentation and brand assets.</dd></div><div><dt>Being evaluated</dt><dd>A first useful free code release for developers. No release has been announced.</dd></div><div><dt>Not available yet</dt><dd>A public product installer, released application source or a reproducible end-to-end product demonstration.</dd></div></dl>
+<p class="note">Scope checked October 15, 2026.</p>
+</section>
+<section id="founder" aria-labelledby="founder-title"><h2 id="founder-title">Built through practical AI work.</h2>
+<p class="intro">I'm Tony, the independent builder behind KBP AI, based near Sacramento. I work mainly from an iPad and iPhone, and I share the tools I try, the decisions I make and the results I can verify. The product will change as I learn what people actually need.</p>
+<p><a href="https://t.me/kbp_ai">Practical notes on Telegram <span aria-hidden="true">&nbsp;↗</span></a></p>
+</section>
+<section id="contact" aria-labelledby="contact-title"><h2 id="contact-title">Have a task that gets stuck between tools?</h2>
+<p class="intro">Describe a recent example where messages, documents and tools didn't line up: <a href="mailto:hello@kbp-ai.com">hello@kbp-ai.com</a>.</p>
 </section>
 </main>
-<footer><p>KBP AI · Knowledge Becomes Progress<br>West Coast KBP</p><a href="mailto:hello@kbp-ai.com">hello@kbp-ai.com</a><a href="https://t.me/kbp_ai">Telegram <span aria-hidden="true">&nbsp;↗</span></a><a href="https://github.com/WestCoastKBP/kbp-ai-site">GitHub <span aria-hidden="true">&nbsp;↗</span></a></footer>
+<footer><p>KBP AI · Knowledge Becomes Progress · West Coast KBP<br>Independent project. References to OpenAI, Anthropic, Google or GitHub do not imply partnership or endorsement.</p><a href="mailto:hello@kbp-ai.com">hello@kbp-ai.com</a><a href="https://t.me/kbp_ai">Telegram <span aria-hidden="true">&nbsp;↗</span></a><a href="https://github.com/WestCoastKBP">GitHub <span aria-hidden="true">&nbsp;↗</span></a><a href="https://github.com/WestCoastKBP/kbp-ai-site">Website source <span aria-hidden="true">&nbsp;↗</span></a></footer>
 </div>
 <script>
 const appearance=document.getElementById('theme');
